@@ -1,5 +1,5 @@
 ## Whitepaper  
-Learn more about EudoxAI's project vision, technical architecture, and tokenomics by reading our [Whitepaper](docs/whitepaper.md).
+Learn more about EudoxAI's project vision, technical architecture, and tokenomics by reading our [Whitepaper](src/docs/whitepaper.md).
 
 
 
