@@ -1,0 +1,5 @@
+# tests/test_input_handler.py
+from src.input_handler import validate_image
+
+def test_validate_image():
+    assert validate_image("example.jpg") == True
