@@ -1,3 +1,9 @@
+## Whitepaper  
+Learn more about EudoxAI's project vision, technical architecture, and tokenomics by reading our [Whitepaper](docs/whitepaper.md).
+
+
+
+
 EudoxAI
 
 EudoxAI is an advanced AI bot designed to automatically interpret NASA telemetry data through photographic analysis. By leveraging cutting-edge computer vision and machine learning techniques, EudoxAI decodes, visualizes, and contextualizes NASA’s space imagery for scientific research and exploration purposes.
