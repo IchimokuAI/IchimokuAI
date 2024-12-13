@@ -1,48 +1,47 @@
 ## Whitepaper  
-Learn more about EudoxAI's project vision, technical architecture, and tokenomics by reading our [Whitepaper](src/docs/whitepaper.md).
+Discover EudoxAI's comprehensive project vision, technical architecture, and tokenomics by reading our [Whitepaper](src/docs/whitepaper.md).
 
+# EudoxAI
 
-
-# ExodusAI
-
-**ExodusAI** is an advanced AI bot developed to interact dynamically on Twitter by replying to every tweet it is tagged in. Built on the conjecture and framework of **@FXN bots**, ExodusAI leverages an innovative bridging system to ensure real-time, intelligent responses tailored to every interaction. With a focus on adaptability and scalability, ExodusAI is designed to enhance social media communication through automation and AI-driven conversational techniques.
+**EudoxAI** is an advanced AI-powered analytics platform designed to scan, analyze, and interact across multiple platforms, including DexScreeners, Twitter, TikTok, and blockchain wallets. Utilizing cutting-edge AI technology, EudoxAI streamlines data aggregation by monitoring developer wallets, fresh holders, top holders, and asset bundling. With its adaptable architecture, EudoxAI enhances real-time data-driven insights and automates blockchain intelligence operations.
 
 ---
 
-## 🌐 **What ExodusAI Does**
+## 🌐 **What EudoxAI Does**
 
-ExodusAI is designed to process and respond to tweets in which it is mentioned. By employing a combination of bridging systems and advanced natural language processing (NLP), ExodusAI seamlessly interacts with users to create an engaging conversational experience.
+EudoxAI consolidates critical market and blockchain data from various sources to offer real-time, actionable insights. Its multi-platform integration ensures comprehensive monitoring and intelligent response generation tailored to market trends and social sentiment.
 
 ### **Key Features**
 
-#### 🔄 **Real-Time Responses**
-- **Tweet Monitoring:** Continuously scans for mentions in real-time using the Twitter API.
-- **Dynamic Replies:** Generates context-aware responses tailored to the content of the tagged tweet.
+#### 🔄 **Real-Time Data Aggregation**
+- **Platform Scanning:** Continuously monitors DexScreeners, Twitter, TikTok, and blockchain wallets.
+- **Data Integration:** Aggregates data streams into actionable reports, ensuring timely analysis.
 
-#### 🧠 **Bridging System**
-- **AI-Powered Reply Generation:** Utilizes a custom bridging mechanism to streamline response processing.
-- **Efficient Routing:** Ensures accurate and rapid response delivery through optimized workflows.
+#### 🧠 **AI-Driven Analytics**
+- **Wallet Tracking:** Scans developer and top-holder wallets for transactional activity.
+- **Sentiment Analysis:** Evaluates social media sentiment on platforms like Twitter and TikTok.
+- **Bundling Insights:** Identifies and tracks bundled assets for strategic market positioning.
 
-#### 📡 **Scalable Interaction**
-- **High Throughput:** Capable of handling a large volume of mentions simultaneously without compromising quality.
-- **Customizable Behavior:** Adaptable to campaigns, user-defined priorities, or specific interaction goals.
+#### 📡 **Scalable Market Intelligence**
+- **High-Throughput Processing:** Handles large-scale data analysis with precision.
+- **Customizable Alerts:** Enables user-defined triggers for specific events or market shifts.
 
 ---
 
 ## 🚀 **How It Works**
 
-1. **Tweet Detection:** Monitors the Twitter API for any tweets tagging the bot.
-2. **Bridging System Processing:** The bridging mechanism processes the tweet’s content and routes it to the AI engine.
-3. **AI Analysis:** The NLP model analyzes the content, context, and sentiment of the tweet.
-4. **Reply Generation:** Generates an intelligent response tailored to the tweet's context.
-5. **Reply Posting:** Posts the response back to Twitter in real-time.
+1. **Data Collection:** Continuously monitors DexScreeners, social media platforms, and blockchain wallets.
+2. **AI Processing:** Uses advanced AI models to interpret market data, detect anomalies, and generate insights.
+3. **Sentiment & Market Analysis:** Combines financial data with social sentiment for predictive modeling.
+4. **Intelligent Reporting:** Delivers tailored reports and automated notifications in real-time.
+5. **Actionable Insights:** Provides users with clear, data-driven recommendations.
 
 ---
 
 ## 📂 **Repository Overview**
 
 ```
-ExodusAI/
+EudoxAI/
 │
 ├── README.md             # Project Overview
 ├── LICENSE               # Open Source License
@@ -50,13 +49,13 @@ ExodusAI/
 │
 ├── src/                  # Source Code
 │   ├── main.py           # Main Application Logic
-│   ├── twitter_monitor.py # Tweet Monitoring and Handling
-│   ├── response_engine.py # AI Reply Generation
+│   ├── data_monitor.py   # Market & Social Media Monitoring
+│   ├── analytics_engine.py # AI Data Analysis & Reporting
 │   └── utils/            # Helper Functions
 │
 ├── tests/                # Unit Tests
 ├── docs/                 # Documentation
-└── data/                 # Sample Tweet Data for Testing
+└── data/                 # Sample Market Data for Testing
 ```
 
 ---
@@ -64,7 +63,7 @@ ExodusAI/
 ## 🧪 **Tech Stack**
 - **Programming Language:** Python
 - **AI Frameworks:** OpenAI GPT, Hugging Face Transformers
-- **Twitter Integration:** Twitter API (Tweepy or equivalent libraries)
+- **Blockchain Integration:** Web3.py, Ethers.js
 - **Data Processing Libraries:** Pandas, NumPy
 - **Deployment Tools:** Docker, Heroku
 
@@ -73,32 +72,33 @@ ExodusAI/
 ## 📈 **Roadmap**
 
 ### **Phase 1:**
-- Core integration with Twitter API for mention detection.
-- Basic NLP models for simple response generation.
+- Core integration with DexScreeners, Twitter, and blockchain explorers.
+- Basic market tracking and transaction scanning.
 
 ### **Phase 2:**
-- Advanced NLP capabilities for context-aware and sentiment-based replies.
-- Optimization of the bridging system for faster processing.
+- Enhanced AI models for sentiment and transactional behavior analysis.
+- Optimization of the analytics engine for faster processing.
 
 ### **Phase 3:**
-- Multi-platform support for interaction on other social media platforms.
-- Adaptive learning models to refine responses based on historical data.
+- Multi-platform support with advanced asset tracking and predictive analysis.
+- Adaptive learning models to improve predictions and recommendations.
 
 ---
 
 ## 🤝 **Contributions**
-We welcome contributions from AI enthusiasts, developers, and social media strategists. Refer to the `CONTRIBUTING.md` file for detailed guidelines on how to contribute.
+We welcome developers, data analysts, and blockchain enthusiasts to contribute to EudoxAI. Refer to the `CONTRIBUTING.md` file for detailed contribution guidelines.
 
 ---
 
 ## ⚖️ **License**
-This project is licensed under the MIT License. For details, refer to the `LICENSE` file included in the repository.
+This project is licensed under the MIT License. For detailed terms, refer to the `LICENSE` file included in the repository.
 
 ---
 
 ## 📧 **Contact**
-For inquiries or support, please reach out via Twitter at **[@ExodusAI](https://twitter.com/ExodusAI)** or submit an issue on GitHub.
+For inquiries or support, reach out via Twitter at **[@EudoxAI](https://twitter.com/EudoxAI)** or submit an issue on GitHub.
 
 ---
 
-**ExodusAI — Revolutionizing Conversations Through AI.**
+**EudoxAI — Revolutionizing Blockchain Intelligence Through AI.**
+
