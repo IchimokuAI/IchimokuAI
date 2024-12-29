@@ -1,4 +1,4 @@
-# EudoxAI AI Platform
+# IchimokuAI Platform
 
 > A high-performance, scalable enterprise AI development and deployment platform
 
@@ -18,23 +18,23 @@
 ## 🚀 Quick Start
 
 ### Installation
-    pip install EudoxAI-ai
+    pip install IchimokuAI-ai
 
 ### Basic Usage
-    from EudoxAI import EudoxAI
+    from IchimokuAI import IchimokuAI
 
     # Initialize
-    EudoxAI = EudoxAI()
+    IchimokuAI = IchimokuAI()
 
     # Load model 
-    model = EudoxAI.load_model("my-model")
+    model = IchimokuAI.load_model("my-model")
 
     # Predict
     result = model.predict(data)
 
 ### Configuration Example
-    # EudoxAI.yml
-    EudoxAI:
+    # IchimokuAI.yml
+    IchimokuAI:
       model:
         name: "my-model"
         version: "1.0.0"
@@ -145,7 +145,7 @@
 
 ### Model Management Example
     # Create model
-    model = EudoxAI.create_model(
+    model = IchimokuAI.create_model(
         name="my-model",
         version="1.0.0",
         framework="pytorch"
@@ -166,7 +166,7 @@
 
 ### Data Processing Example
     # Create data pipeline
-    pipeline = EudoxAI.create_pipeline()
+    pipeline = IchimokuAI.create_pipeline()
 
     # Add processing steps
     pipeline.add([
@@ -320,18 +320,18 @@
 
 ### Environment Variables
     # Core Settings
-    EudoxAI_ENV=production
-    EudoxAI_LOG_LEVEL=info
-    EudoxAI_API_PORT=8000
+    IchimokuAI_ENV=production
+    IchimokuAI_LOG_LEVEL=info
+    IchimokuAI_API_PORT=8000
 
     # Database
-    EudoxAI_DB_HOST=localhost
-    EudoxAI_DB_PORT=5432
-    EudoxAI_DB_NAME=EudoxAI
+    IchimokuAI_DB_HOST=localhost
+    IchimokuAI_DB_PORT=5432
+    IchimokuAI_DB_NAME=IchimokuAI
 
     # Cache
-    EudoxAI_REDIS_HOST=localhost
-    EudoxAI_REDIS_PORT=6379
+    IchimokuAI_REDIS_HOST=localhost
+    IchimokuAI_REDIS_PORT=6379
 
 ### Configuration Files
     # config.yml
@@ -348,8 +348,8 @@
     database:
       host: localhost
       port: 5432
-      name: EudoxAI
-      user: EudoxAI_user
+      name: IchimokuAI
+      user: IchimokuAI_user
       password: ${DB_PASSWORD}
 
 ### Feature Flags
@@ -367,8 +367,8 @@
 
 ### Development Setup
     # Clone repository
-    git clone https://github.com/EudoxAI-ai/EudoxAI
-    cd EudoxAI
+    git clone https://github.com/IchimokuAI-ai/IchimokuAI
+    cd IchimokuAI
 
     # Create virtual environment
     python -m venv venv
@@ -447,17 +447,17 @@ In the future, we may follow the successful path of previous projects like ELIZA
 
 
 ## Whitepaper  
-Discover EudoxAI's comprehensive project vision, technical architecture, and tokenomics by reading our [Whitepaper](src/docs/whitepaper.md).
+Discover IchimokuAI's comprehensive project vision, technical architecture, and tokenomics by reading our [Whitepaper](src/docs/whitepaper.md).
 
-# EudoxAI
+# IchimokuAI
 
-**EudoxAI** is an advanced AI-powered analytics platform designed to scan, analyze, and interact across multiple platforms, including DexScreeners, Twitter, TikTok, and blockchain wallets. Utilizing cutting-edge AI technology, EudoxAI streamlines data aggregation by monitoring developer wallets, fresh holders, top holders, and asset bundling. With its adaptable architecture, EudoxAI enhances real-time data-driven insights and automates blockchain intelligence operations.
+**IchimokuAI** is an advanced AI-powered analytics platform designed to scan, analyze, and interact across multiple platforms, including DexScreeners, Twitter, TikTok, and blockchain wallets. Utilizing cutting-edge AI technology, IchimokuAI streamlines data aggregation by monitoring developer wallets, fresh holders, top holders, and asset bundling. With its adaptable architecture, IchimokuAI enhances real-time data-driven insights and automates blockchain intelligence operations.
 
 ---
 
-## 🌐 **What EudoxAI Does**
+## 🌐 **What IchimokuAI Does**
 
-EudoxAI consolidates critical market and blockchain data from various sources to offer real-time, actionable insights. Its multi-platform integration ensures comprehensive monitoring and intelligent response generation tailored to market trends and social sentiment.
+IchimokuAI consolidates critical market and blockchain data from various sources to offer real-time, actionable insights. Its multi-platform integration ensures comprehensive monitoring and intelligent response generation tailored to market trends and social sentiment.
 
 ### **Key Features**
 
@@ -489,7 +489,7 @@ EudoxAI consolidates critical market and blockchain data from various sources to
 ## 📂 **Repository Overview**
 
 ```
-EudoxAI/
+IchimokuAI/
 │
 ├── README.md             # Project Overview
 ├── LICENSE               # Open Source License
@@ -534,7 +534,7 @@ EudoxAI/
 ---
 
 ## 🤝 **Contributions**
-We welcome developers, data analysts, and blockchain enthusiasts to contribute to EudoxAI. Refer to the `CONTRIBUTING.md` file for detailed contribution guidelines.
+We welcome developers, data analysts, and blockchain enthusiasts to contribute to IchimokuAI. Refer to the `CONTRIBUTING.md` file for detailed contribution guidelines.
 
 ---
 
@@ -544,9 +544,9 @@ This project is licensed under the MIT License. For detailed terms, refer to the
 ---
 
 ## 📧 **Contact**
-For inquiries or support, reach out via Twitter at **[@EudoxAI](https://twitter.com/EudoxAI)** or submit an issue on GitHub.
+For inquiries or support, reach out via Twitter at **[@IchimokuAI](https://twitter.com/IchimokuAI)** or submit an issue on GitHub.
 
 ---
 
-**EudoxAI — Revolutionizing Blockchain Intelligence Through AI.**
+**IchimokuAI — Revolutionizing Blockchain Intelligence Through AI.**
 
