@@ -1,4 +1,4 @@
-# IchimokuAI Platform
+# MeishoAI Platform
 
 > A high-performance, scalable enterprise AI development and deployment platform
 
@@ -18,23 +18,23 @@
 ## 🚀 Quick Start
 
 ### Installation
-    pip install IchimokuAI-ai
+    pip install MeishoAI-ai
 
 ### Basic Usage
-    from IchimokuAI import IchimokuAI
+    from MeishoAI import MeishoAI
 
     # Initialize
-    IchimokuAI = IchimokuAI()
+    MeishoAI = MeishoAI()
 
     # Load model 
-    model = IchimokuAI.load_model("my-model")
+    model = MeishoAI.load_model("my-model")
 
     # Predict
     result = model.predict(data)
 
 ### Configuration Example
-    # IchimokuAI.yml
-    IchimokuAI:
+    # MeishoAI.yml
+    MeishoAI:
       model:
         name: "my-model"
         version: "1.0.0"
@@ -145,7 +145,7 @@
 
 ### Model Management Example
     # Create model
-    model = IchimokuAI.create_model(
+    model = MeishoAI.create_model(
         name="my-model",
         version="1.0.0",
         framework="pytorch"
@@ -166,7 +166,7 @@
 
 ### Data Processing Example
     # Create data pipeline
-    pipeline = IchimokuAI.create_pipeline()
+    pipeline = MeishoAI.create_pipeline()
 
     # Add processing steps
     pipeline.add([
@@ -320,18 +320,18 @@
 
 ### Environment Variables
     # Core Settings
-    IchimokuAI_ENV=production
-    IchimokuAI_LOG_LEVEL=info
-    IchimokuAI_API_PORT=8000
+    MeishoAI_ENV=production
+    MeishoAI_LOG_LEVEL=info
+    MeishoAI_API_PORT=8000
 
     # Database
-    IchimokuAI_DB_HOST=localhost
-    IchimokuAI_DB_PORT=5432
-    IchimokuAI_DB_NAME=IchimokuAI
+    MeishoAI_DB_HOST=localhost
+    MeishoAI_DB_PORT=5432
+    MeishoAI_DB_NAME=MeishoAI
 
     # Cache
-    IchimokuAI_REDIS_HOST=localhost
-    IchimokuAI_REDIS_PORT=6379
+    MeishoAI_REDIS_HOST=localhost
+    MeishoAI_REDIS_PORT=6379
 
 ### Configuration Files
     # config.yml
@@ -348,8 +348,8 @@
     database:
       host: localhost
       port: 5432
-      name: IchimokuAI
-      user: IchimokuAI_user
+      name: MeishoAI
+      user: MeishoAI_user
       password: ${DB_PASSWORD}
 
 ### Feature Flags
@@ -367,8 +367,8 @@
 
 ### Development Setup
     # Clone repository
-    git clone https://github.com/IchimokuAI-ai/IchimokuAI
-    cd IchimokuAI
+    git clone https://github.com/MeishoAI-ai/MeishoAI
+    cd MeishoAI
 
     # Create virtual environment
     python -m venv venv
@@ -447,17 +447,17 @@ In the future, we may follow the successful path of previous projects like ELIZA
 
 
 ## Whitepaper  
-Discover IchimokuAI's comprehensive project vision, technical architecture, and tokenomics by reading our [Whitepaper](src/docs/whitepaper.md).
+Discover MeishoAI's comprehensive project vision, technical architecture, and tokenomics by reading our [Whitepaper](src/docs/whitepaper.md).
 
-# IchimokuAI
+# MeishoAI
 
-**IchimokuAI** is an advanced AI-powered analytics platform designed to scan, analyze, and interact across multiple platforms, including DexScreeners, Twitter, TikTok, and blockchain wallets. Utilizing cutting-edge AI technology, IchimokuAI streamlines data aggregation by monitoring developer wallets, fresh holders, top holders, and asset bundling. With its adaptable architecture, IchimokuAI enhances real-time data-driven insights and automates blockchain intelligence operations.
+**MeishoAI** is an advanced AI-powered analytics platform designed to scan, analyze, and interact across multiple platforms, including DexScreeners, Twitter, TikTok, and blockchain wallets. Utilizing cutting-edge AI technology, MeishoAI streamlines data aggregation by monitoring developer wallets, fresh holders, top holders, and asset bundling. With its adaptable architecture, MeishoAI enhances real-time data-driven insights and automates blockchain intelligence operations.
 
 ---
 
-## 🌐 **What IchimokuAI Does**
+## 🌐 **What MeishoAI Does**
 
-IchimokuAI consolidates critical market and blockchain data from various sources to offer real-time, actionable insights. Its multi-platform integration ensures comprehensive monitoring and intelligent response generation tailored to market trends and social sentiment.
+MeishoAI consolidates critical market and blockchain data from various sources to offer real-time, actionable insights. Its multi-platform integration ensures comprehensive monitoring and intelligent response generation tailored to market trends and social sentiment.
 
 ### **Key Features**
 
@@ -489,7 +489,7 @@ IchimokuAI consolidates critical market and blockchain data from various sources
 ## 📂 **Repository Overview**
 
 ```
-IchimokuAI/
+MeishoAI/
 │
 ├── README.md             # Project Overview
 ├── LICENSE               # Open Source License
@@ -534,7 +534,7 @@ IchimokuAI/
 ---
 
 ## 🤝 **Contributions**
-We welcome developers, data analysts, and blockchain enthusiasts to contribute to IchimokuAI. Refer to the `CONTRIBUTING.md` file for detailed contribution guidelines.
+We welcome developers, data analysts, and blockchain enthusiasts to contribute to MeishoAI. Refer to the `CONTRIBUTING.md` file for detailed contribution guidelines.
 
 ---
 
@@ -544,9 +544,9 @@ This project is licensed under the MIT License. For detailed terms, refer to the
 ---
 
 ## 📧 **Contact**
-For inquiries or support, reach out via Twitter at **[@IchimokuAI](https://twitter.com/IchimokuAI)** or submit an issue on GitHub.
+For inquiries or support, reach out via Twitter at **[@MeishoAI](https://twitter.com/MeishoAI)** or submit an issue on GitHub.
 
 ---
 
-**IchimokuAI — Revolutionizing Blockchain Intelligence Through AI.**
+**MeishoAI — Revolutionizing Blockchain Intelligence Through AI.**
 
