@@ -1,208 +1,366 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Discover IchimokuAI, a cutting-edge AI Trading Agent built using the @joinFXN framework, designed to deliver profitable mid-cap trading solutions.">
-
-    <title>IchimokuAI - AI Trading Agent for Profitable Mid-Cap Trading</title>
-
-    <!-- Colfax Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Colfax:wght@400;500;700&display=swap" rel="stylesheet">
-
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$IchimokuAI - AI-Powered Emotional Support for Web3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-      /* General Styling */
-      body {
-        background-color: #000; /* Black background */
-        color: #fff; /* White text */
-        font-family: 'Colfax', sans-serif; /* Colfax font */
-        margin: 0;
-        padding: 0;
-      }
-
-      a {
-        text-decoration: none;
-      }
-
-      /* Header Styling */
-      header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 16px 24px;
-        background-color: #111;
-        border-bottom: 1px solid #222;
-      }
-
-      header h1 {
-        font-size: 1.8rem;
-        font-weight: 700;
-        text-align: center;
-        margin: 0;
-      }
-
-      .x-button {
-        position: absolute;
-        top: 16px;
-        right: 24px;
-        padding: 8px 16px;
-        background-color: #1a73e8; /* Dark blue */
-        color: #fff;
-        font-weight: 600;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        text-decoration: none;
-      }
-
-      .x-button:hover {
-        background-color: #0d47a1; /* Darker blue on hover */
-      }
-
-      /* Photo Banner Styling */
-      .photo-banner {
-        position: relative;
-        width: 100%;
-        height: 300px;
-        overflow: hidden;
-        background-color: #222;
-      }
-
-      .photo-banner img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      .photo-banner .banner-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #fff;
-        font-size: 2rem;
-        font-weight: 700;
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-        text-align: center;
-      }
-
-      /* Grid Section */
-      .grid-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
-        gap: 16px;
-        padding: 24px;
-      }
-
-      .grid-item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border-radius: 8px;
-        overflow: hidden;
-        background-color: #111; /* Dark gray background for images */
-        padding: 16px;
-      }
-
-      .grid-item img {
-        width: 100%;
-        height: auto;
-        border-radius: 8px;
-        object-fit: cover;
-      }
-
-      .grid-item p {
-        margin-top: 8px;
-        text-align: center;
-        font-size: 14px;
-        color: #ccc;
-      }
-
-      /* Call-to-Action Section */
-      .cta {
-        text-align: center;
-        margin: 24px 0;
-      }
-
-      .cta a {
-        display: inline-block;
-        margin: 8px;
-        padding: 12px 24px;
-        color: #fff;
-        background-color: #1da1f2;
-        border-radius: 4px;
-        font-weight: bold;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-      }
-
-      .cta a:hover {
-        background-color: #0d8dd7;
-      }
-
-      /* Footer Styling */
-      footer {
-        text-align: center;
-        padding: 16px 24px;
-        border-top: 1px solid #222;
-        background-color: #111;
-        font-size: 0.875rem;
-        color: #666;
-      }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-animation {
+            animation: float 4s ease-in-out infinite;
+        }
     </style>
-  </head>
-  <body>
-    <!-- Header -->
-    <header>
-      <h1>IchimokuAI</h1>
-      <a href="https://x.com/IchimokuAI" target="_blank" class="x-button">X</a>
-    </header>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-16{margin-top:4rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-8{margin-top:2rem}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.aspect-video{aspect-ratio:16 / 9}.h-10{height:2.5rem}.h-12{height:3rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-full{height:100%}.w-1\/2{width:50%}.w-10{width:2.5rem}.w-12{width:3rem}.w-3\/4{width:75%}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-7xl{max-width:80rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-6 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1.5rem * var(--tw-space-x-reverse));margin-left:calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-t{border-top-width:1px}.border-gray-800{--tw-border-opacity:1;border-color:rgb(31 41 55 / var(--tw-border-opacity, 1))}.border-purple-500\/30{border-color:rgb(168 85 247 / 0.3)}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.bg-blue-900\/50{background-color:rgb(30 58 138 / 0.5)}.bg-gray-600{--tw-bg-opacity:1;background-color:rgb(75 85 99 / var(--tw-bg-opacity, 1))}.bg-gray-700\/50{background-color:rgb(55 65 81 / 0.5)}.bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55 / var(--tw-bg-opacity, 1))}.bg-gray-800\/50{background-color:rgb(31 41 55 / 0.5)}.bg-gray-800\/80{background-color:rgb(31 41 55 / 0.8)}.bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity, 1))}.bg-gray-900\/50{background-color:rgb(17 24 39 / 0.5)}.bg-gray-900\/90{background-color:rgb(17 24 39 / 0.9)}.bg-green-900\/50{background-color:rgb(20 83 45 / 0.5)}.bg-pink-900\/50{background-color:rgb(131 24 67 / 0.5)}.bg-purple-900\/50{background-color:rgb(88 28 135 / 0.5)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-purple-400{--tw-gradient-from:#c084fc var(--tw-gradient-from-position);--tw-gradient-to:rgb(192 132 252 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-purple-500{--tw-gradient-from:#a855f7 var(--tw-gradient-from-position);--tw-gradient-to:rgb(168 85 247 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-purple-500\/20{--tw-gradient-from:rgb(168 85 247 / 0.2) var(--tw-gradient-from-position);--tw-gradient-to:rgb(168 85 247 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-purple-900{--tw-gradient-from:#581c87 var(--tw-gradient-from-position);--tw-gradient-to:rgb(88 28 135 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-purple-900\/50{--tw-gradient-from:rgb(88 28 135 / 0.5) var(--tw-gradient-from-position);--tw-gradient-to:rgb(88 28 135 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-pink-400{--tw-gradient-to:#f472b6 var(--tw-gradient-to-position)}.to-pink-500{--tw-gradient-to:#ec4899 var(--tw-gradient-to-position)}.to-pink-500\/20{--tw-gradient-to:rgb(236 72 153 / 0.2) var(--tw-gradient-to-position)}.to-pink-600\/50{--tw-gradient-to:rgb(219 39 119 / 0.5) var(--tw-gradient-to-position)}.to-pink-900{--tw-gradient-to:#831843 var(--tw-gradient-to-position)}.bg-clip-text{-webkit-background-clip:text;background-clip:text}.object-cover{object-fit:cover}.p-2{padding:0.5rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pt-16{padding-top:4rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity, 1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-green-400{--tw-text-opacity:1;color:rgb(74 222 128 / var(--tw-text-opacity, 1))}.text-pink-400{--tw-text-opacity:1;color:rgb(244 114 182 / var(--tw-text-opacity, 1))}.text-purple-200{--tw-text-opacity:1;color:rgb(233 213 255 / var(--tw-text-opacity, 1))}.text-purple-400{--tw-text-opacity:1;color:rgb(192 132 252 / var(--tw-text-opacity, 1))}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.backdrop-blur-lg{--tw-backdrop-blur:blur(16px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:-translate-y-0\.5:hover{--tw-translate-y:-0.125rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-purple-500:hover{--tw-border-opacity:1;border-color:rgb(168 85 247 / var(--tw-border-opacity, 1))}.hover\:bg-purple-500\/50:hover{background-color:rgb(168 85 247 / 0.5)}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:shadow-lg:hover{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:shadow-purple-500\/25:hover{--tw-shadow-color:rgb(168 85 247 / 0.25);--tw-shadow:var(--tw-shadow-colored)}.active\:translate-y-0:active{--tw-translate-y:0px;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:translate-x-0\.5{--tw-translate-x:0.125rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:rotate-12{--tw-rotate:12deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width: 640px){.sm\:w-auto{width:auto}.sm\:flex-row{flex-direction:row}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}@media (min-width: 768px){.md\:mb-0{margin-bottom:0px}.md\:block{display:block}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}}@media (min-width: 1024px){.lg\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:text-6xl{font-size:3.75rem;line-height:1}}</style></head>
+<body class="bg-gray-900">
+<!-- Navigation -->
+<nav class="fixed w-full z-50 bg-gray-900/90 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <!-- Logo -->
+            <div class="flex items-center">
+                    <span class="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                        $IchimokuAI
+                    </span>
+            </div>
 
-    <!-- Photo Banner -->
-    <div class="photo-banner">
-      <img src="./images/banner-photo.jpg" alt="IchimokuAI Banner">
-      <div class="banner-text">Transforming AI Trading for Mid-Cap Excellence</div>
+            <!-- Desktop Navigation -->
+            <div class="hidden md:block">
+                <div class="flex items-center space-x-6">
+                    <a href="#painpoint" class="text-gray-300 hover:text-white transition-colors">Sound Familiar?</a>
+                    <a href="#features" class="text-gray-300 hover:text-white transition-colors">Features</a>
+                    <a href="whitepaper.html" class="text-gray-300 hover:text-white transition-colors">Whitepaper</a>
+                    <a href="https://t.me/IchimokuAI" target="_blank" class="text-gray-300 hover:text-white">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="https://x.com/IchimokuAI" target="_blank" class="text-gray-300 hover:text-white">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+<!--                    <button class="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg hover:shadow-lg transition-all">-->
+<!--                        Connect Wallet-->
+<!--                    </button>-->
+                </div>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+                <button class="text-gray-300 hover:text-white">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
     </div>
+</nav>
 
-    <!-- Call-to-Actions -->
-    <div class="cta">
-      <a href="https://t.me/IchimokuAI" target="_blank">Get Started</a>
-      <a href="https://github.com/IchimokuAI" target="_blank">View on GitHub</a>
+<!-- Hero Section -->
+<div class="relative bg-gray-900 text-white pt-16">
+    <div class="absolute inset-0 bg-gradient-to-br from-purple-900/50 to-pink-600/50"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Hero Content -->
+            <div>
+                <h1 class="text-5xl lg:text-6xl font-bold mb-6">
+                    AI-Powered
+                    <span class="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                            Psychological Healing
+                        </span>
+                    for Web3
+                </h1>
+                <p class="text-xl text-gray-300 mb-8">
+                    Find balance, emotional support, and mental wellness in the fast-paced Web3 world.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://pump.fun/coin/3NXsc7c9difQTqy2njit8vdi4hzNWNzM2cJgxNQHpump" target="_blank" class="px-4 py-4 group inline-flex items-center gap-2 w-full sm:w-auto justify-center font-semibold text-white bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-purple-500/25 active:translate-y-0">
+                        <span>Support The Project</span>
+                        <span class="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:rotate-12">🚀</span>
+                    </a>
+                    <a href="whitepaper.html" target="_blank" class="px-4 py-4 border border-purple-500/30 rounded-lg hover:border-purple-500 transition-all text-center">
+                        Read Whitepaper
+                    </a>
+                </div>
+                <div class="mt-8 p-6 bg-gray-800/50 backdrop-blur-lg rounded-xl border border-white/10 transition-all">
+                    <p class="text-white  leading-relaxed">
+                        We've gone all in on the fair launch ourselves—now's your chance to join the movement and make history! 🚀
+                    </p>
+                </div>
+            </div>
+
+            <!-- Hero Image/Animation -->
+            <div class="relative float-animation">
+                <div class="bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl p-8">
+                    <!-- Chat Interface Mock -->
+                    <div class="bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 space-y-4">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-full"></div>
+                            <div class="flex-1">
+                                <div class="h-2 bg-gray-600 rounded-full w-3/4"></div>
+                                <div class="h-2 bg-gray-600 rounded-full w-1/2 mt-2"></div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-700/50 p-4 rounded-lg">
+                            <p class="text-gray-300">How are you handling the current market situation?</p>
+                        </div>
+                        <div class="bg-purple-900/50 p-4 rounded-lg">
+                            <p class="text-purple-200">I understand market volatility can be stressful. Let's talk about it.</p>
+                        </div>
+                        <div class="flex gap-3 mt-4">
+                                <span class="px-3 py-1 bg-gray-700/50 rounded-full text-sm text-gray-300 hover:bg-purple-500/50 cursor-pointer transition-all">
+                                    Very stressed
+                                </span>
+                            <span class="px-3 py-1 bg-gray-700/50 rounded-full text-sm text-gray-300 hover:bg-purple-500/50 cursor-pointer transition-all">
+                                    Handling it well
+                                </span>
+                            <span class="px-3 py-1 bg-gray-700/50 rounded-full text-sm text-gray-300 hover:bg-purple-500/50 cursor-pointer transition-all">
+                                    Need guidance
+                                </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Metrics -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
+            <div class="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 text-center">
+                <div class="text-3xl font-bold text-purple-400 mb-2">24/7</div>
+                <p class="text-gray-400">AI Support</p>
+            </div>
+            <div class="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 text-center">
+                <div class="text-3xl font-bold text-pink-400 mb-2">100%</div>
+                <p class="text-gray-400">Anonymous</p>
+            </div>
+            <div class="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 text-center">
+                <div class="text-3xl font-bold text-purple-400 mb-2">10k+</div>
+                <p class="text-gray-400">Early Users</p>
+            </div>
+            <div class="bg-gray-800/50 backdrop-blur-sm rounded-lg p-6 text-center">
+                <div class="text-3xl font-bold text-pink-400 mb-2">$1M+</div>
+                <p class="text-gray-400">Raised</p>
+            </div>
+        </div>
     </div>
+</div>
+<!-- Pain Points Section -->
+<section class="py-20 bg-gray-800" id="painpoint">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold mb-6 text-center text-white">Sound Familiar?</h2>
+        <p class="text-xl text-gray-400 text-center mb-16 max-w-3xl mx-auto">
+            You're not alone. 78% of Web3 professionals experience these daily challenges.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Market FOMO -->
+            <div class="bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 hover:shadow-lg transition-all">
+                <div class="w-12 h-12 bg-purple-900/50 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-chart-line text-purple-400"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-white">FOMO &amp; Regret</h3>
+                <p class="text-gray-400">
+                    "I missed another 100x gem... Why didn't I ape in earlier? Everyone else seems to be making profits except me."
+                </p>
+            </div>
 
-    <!-- Photo Grid Section -->
-    <section class="grid-container">
-      <!-- Grid Item 1 -->
-      <div class="grid-item">
-        <img src="./images/feature-1.png" alt="Advanced Algorithms">
-        <p>Advanced Algorithms for Precision</p>
-      </div>
+            <!-- Sleep Issues -->
+            <div class="bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 hover:shadow-lg transition-all">
+                <div class="w-12 h-12 bg-pink-900/50 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-moon text-pink-400"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-white">Sleep? What's That?</h3>
+                <p class="text-gray-400">
+                    Checking charts at 3 AM? Waking up to every notification? Your sleep schedule is as volatile as the market.
+                </p>
+            </div>
 
-      <!-- Grid Item 2 -->
-      <div class="grid-item">
-        <img src="./images/feature-2.png" alt="Mid-Cap Optimization">
-        <p>Optimized for Mid-Cap Trading</p>
-      </div>
+            <!-- Portfolio Anxiety -->
+            <div class="bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 hover:shadow-lg transition-all">
+                <div class="w-12 h-12 bg-purple-900/50 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-wallet text-purple-400"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-white">Portfolio Obsession</h3>
+                <p class="text-gray-400">
+                    Checking your portfolio every 5 minutes? The red numbers are affecting your mood more than you'd like to admit.
+                </p>
+            </div>
 
-      <!-- Grid Item 3 -->
-      <div class="grid-item">
-        <img src="./images/chart-placeholder.png" alt="Real-Time Performance">
-        <p>Real-Time Performance Metrics</p>
-      </div>
+            <!-- Social Isolation -->
+            <div class="bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 hover:shadow-lg transition-all">
+                <div class="w-12 h-12 bg-pink-900/50 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-user-friends text-pink-400"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-white">Nobody Gets It</h3>
+                <p class="text-gray-400">
+                    Friends and family call you crazy for being in crypto. They don't understand your 'internet money' obsession.
+                </p>
+            </div>
 
-      <!-- Grid Item 4 -->
-      <div class="grid-item">
-        <img src="./images/screenshot.png" alt="Trading Insights">
-        <p>Trading Insights and Analytics</p>
-      </div>
-    </section>
+            <!-- Information Overwhelm -->
+            <div class="bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 hover:shadow-lg transition-all">
+                <div class="w-12 h-12 bg-purple-900/50 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-brain text-purple-400"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-white">Info Overload</h3>
+                <p class="text-gray-400">
+                    100+ Discord servers, endless Twitter spaces, Telegram alerts 24/7. Your brain is running at 100% CPU.
+                </p>
+            </div>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2024 IchimokuAI. Built with ❤️ for traders.</p>
-    </footer>
-  </body>
-</html>
+            <!-- Trading Trauma -->
+            <div class="bg-gray-900/50 backdrop-blur-sm rounded-xl p-8 hover:shadow-lg transition-all">
+                <div class="w-12 h-12 bg-pink-900/50 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-hands-helping text-pink-400"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4 text-white">Emotional Scars</h3>
+                <p class="text-gray-400">
+                    Got rekt by a rugpull? Lost funds in a hack? The trauma makes it hard to trust new projects.
+                </p>
+            </div>
+        </div>
+
+        <!-- Emotional Hook -->
+        <div class="mt-16 text-center">
+            <p class="text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                We get it because we've been there. The Web3 journey doesn't have to be a lonely one.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <div class="bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 flex items-center gap-4">
+                    <div class="w-12 h-12 bg-green-900/50 rounded-full flex items-center justify-center">
+                        <i class="fas fa-check text-green-400"></i>
+                    </div>
+                    <p class="text-gray-300">Professional AI Support</p>
+                </div>
+                <div class="bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 flex items-center gap-4">
+                    <div class="w-12 h-12 bg-blue-900/50 rounded-full flex items-center justify-center">
+                        <i class="fas fa-lock text-blue-400"></i>
+                    </div>
+                    <p class="text-gray-300">100% Anonymous</p>
+                </div>
+                <div class="bg-gray-900/50 backdrop-blur-sm rounded-xl p-6 flex items-center gap-4">
+                    <div class="w-12 h-12 bg-purple-900/50 rounded-full flex items-center justify-center">
+                        <i class="fas fa-users text-purple-400"></i>
+                    </div>
+                    <p class="text-gray-300">Web3 Native Community</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-16 text-center">
+            <a href="https://t.me/IchimokuAI" target="_blank" class="inline-block px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg hover:shadow-lg transition-all">
+                Join Others Like You
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Solution Section -->
+<section class="py-20 bg-gray-900" id="features">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-4xl font-bold mb-6 text-white">AI-Powered Mental Wellness</h2>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-purple-900/50 rounded-full flex-shrink-0 flex items-center justify-center">
+                            <i class="fas fa-robot text-purple-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 text-white">24/7 Support</h3>
+                            <p class="text-gray-400">AI-powered emotional support that understands Web3 culture</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-pink-900/50 rounded-full flex-shrink-0 flex items-center justify-center">
+                            <i class="fas fa-user-shield text-pink-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 text-white">Complete Privacy</h3>
+                            <p class="text-gray-400">Anonymous support using Web3 wallet authentication</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-purple-900/50 rounded-full flex-shrink-0 flex items-center justify-center">
+                            <i class="fas fa-gem text-purple-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 text-white">Token Benefits</h3>
+                            <p class="text-gray-400">Access premium features through $IchimokuAI tokens</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-2xl p-2">
+                    <div class="w-full rounded-lg bg-gray-800/80 backdrop-blur-sm p-2 aspect-video">
+                        <!-- Video Container -->
+                        <div class="relative w-full h-full">
+                            <video class="w-full h-full rounded-lg object-cover" autoplay="" loop="" controls="" playsinline="">
+                                <source src="7R3a7NpsS-LdxTat.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Investment Opportunity -->
+<section class="py-20 bg-gradient-to-br from-purple-900 to-pink-900 text-white" id="tokenomics">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-4xl font-bold mb-8">Early Investment Opportunity</h2>
+        <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+            Join the revolution in Web3 mental health support. Early investors get exclusive access to premium features.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl">
+                <h3 class="text-2xl font-bold text-purple-400 mb-2">100%</h3>
+                <p>Public Sale[✅ Fair for All, Devs Included!]</p>
+            </div>
+            <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl">
+                <h3 class="text-2xl font-bold text-pink-400 mb-2">1B</h3>
+                <p>Total Supply</p>
+            </div>
+            <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl">
+                <h3 class="text-2xl font-bold text-purple-400 mb-2">15%</h3>
+                <p>Revenue Buyback</p>
+            </div>
+        </div>
+        <a href="https://t.me/IchimokuAI" target="_blank" class="inline-block px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-lg hover:shadow-lg transition-all">
+            Join Now
+        </a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-8 md:mb-0">
+                    <span class="text-2xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                        $IchimokuAI
+                    </span>
+                <p class="mt-2">AI-powered psychological healing for Web3</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="https://t.me/IchimokuAI" target="_blank" class="hover:text-white transition-colors">
+                    <i class="fab fa-telegram text-2xl"></i>
+                </a>
+                <a href="https://x.com/IchimokuAI" target="_blank" class="hover:text-white transition-colors">
+                    <i class="fab fa-twitter text-2xl"></i>
+                </a>
+            </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-gray-800 text-center">
+            <p class="text-sm">© 2024 IchimokuAI. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+</body></html>
