@@ -1,4 +1,4 @@
-# MeishoAI Platform
+# IchimokuAI Platform
 
 > A high-performance, scalable enterprise AI development and deployment platform
 
